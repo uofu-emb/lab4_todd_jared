@@ -22,3 +22,12 @@
 #git submodule add https://git@github.com/FreeRTOS/FreeRTOS-Kernel.git lib/freertos
 #git submodule add https://github.com/ThrowTheSwitch/Unity.git lib/unity
 #git submodule update --init --recursive
+[submodule "lib/pico-sdk"]
+	path = lib/pico-sdk
+	url = https://github.com/raspberrypi/pico-sdk.git
+[submodule "lib/freertos"]
+	path = lib/freertos
+	url = https://git@github.com/FreeRTOS/FreeRTOS-Kernel.git
+[submodule "lib/unity"]
+	path = lib/unity
+	url = https://github.com/ThrowTheSwitch/Unity.git
