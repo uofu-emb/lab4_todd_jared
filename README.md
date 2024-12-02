@@ -2,7 +2,7 @@
 
 
 # Test_Fifo.c Results
-Launching runner
+Launching runner <br>
 Starting test run
 Sending messages
 Got result 0 for 5, handled by thread 0
