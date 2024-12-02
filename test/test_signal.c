@@ -10,6 +10,8 @@
 #define TEST_RUNNER_PRIORITY      ( tskIDLE_PRIORITY + 2UL )
 #define TEST_RUNNER_STACK_SIZE configMINIMAL_STACK_SIZE
 
+int num = 0;
+
 void setUp(void) {}
 
 void tearDown(void) {}
@@ -126,6 +128,11 @@ void runner_thread (__unused void *args)
 int main (void)
 {
     stdio_init_all();
+       while(num < 100){
+        printf("test_signal %d\n", num);
+        num++;
+        sleep_ms(250);
+    }
     printf("Launching runner\n");
     hard_assert(cyw43_arch_init() == PICO_OK);
     xTaskCreate(runner_thread, "TestRunner",
